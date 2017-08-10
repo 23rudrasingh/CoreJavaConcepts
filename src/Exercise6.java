@@ -1,7 +1,7 @@
 
 /**
  * @author pawan.singh This exercise explain about 'this' keywords and its uses.
- *         'this' tells about the current reference of the class.
+ *         'this' refers to current class object.
  */
 public class Exercise6 {
 
@@ -20,10 +20,10 @@ class This extends SuperClass {
 	public This() {
 		/*
 		 * compiler will try to look for the constructor call at very first
-		 * line. If it didn't find any it will add `Super()` which will invoke
+		 * line. If it doesn't find any it will add `Super()` which will invoke
 		 * its super class constructor. Every class is child of java.lang.object
 		 * by default, if it is not to any. An object of class can not be in
-		 * existence until Super() of java.lang.object gets invoked that is a
+		 * existence until super() of java.lang.object gets invoked that is a
 		 * constructor of Object class.
 		 */
 		// super() will be added by default by compiler as par above I
@@ -32,7 +32,7 @@ class This extends SuperClass {
 	}
 
 	public This(String name) {
-		// Here Super() wouldn't be added by default as it found this().
+		// Here Super() wouldn't be added by default as it finds this().
 		this();
 
 		// here to handle the ambiguity we use 'this' to refer current instance.

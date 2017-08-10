@@ -1,4 +1,8 @@
 class Exercise1 {
+	
+	// Could you please list down the things you are trying to achieve in below example, 
+	// all I could see is, you are trying to set some fields and accessing other,
+	// hence you'll always get null or 0 in output.
 	public static void main(String []args) {
 		int a;
 		Student obj = new Student();
@@ -22,10 +26,12 @@ class Exercise1 {
 }
 
 class Student {
-	 String defaultName, name = getDefaultName();
-	 int defaultAge, age = getDefaultAge();
+	// Declare every variable separately.
+	// Declare properties as private. Go through JavaBean standards.
+	 String defaultName, name = getDefaultName(); // justify
+	 int defaultAge, age = getDefaultAge(); // justify
 	 
-	 public Student() {
+	 public Student() { // remove auto generated code or TODOs
 		// TODO Auto-generated constructor stub
 	}
 	 

@@ -33,7 +33,7 @@ class Class {
 	}
 	/* Methods to bind its data. methods can be static or non-static. static methods get place in class area, so it doesn't need instances
 	 * to access, we can access it as Class.msg(). static members are common to all of its instances and share among them.
-	 * Static method can access only static members. 
+	 * Static method can access only static members. (directly, we can use non-static variables by creating an object, depending on the requirement.)
 	 */
 	private static void msg() {
 		System.out.println("This is in class area");
